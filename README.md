@@ -55,22 +55,21 @@ We will not concentrate on any particular resources. Instead, the readings will 
 |9	|  20 Sep  | Data Acquisition & Management (cont'd) ||  | |
 |10	|  5 Oct  | Requirement for (and) AI | [Requirements Engineering for Machine Learning: Perspectives from Data Scientists](https://arxiv.org/pdf/1908.04674.pdf)|  | |
 |11	|  7 Oct  |  Human-AI Interaction Design | [How Good is 85%? A Survey Tool to Connect Classifier Evaluation to Acceptability of Accuracy](http://www.mjskay.com/papers/chi_2015_accuracy-acceptability-mjskay.pdf)|  | |
-|12	|  12 Oct  | Human-AI Interaction Design | [Guidelines for Human-AI Interaction](https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/)| | |
-|13	|  14 Oct  | Human-AI Interaction Design | BIS book: Chapter 5-8 <br> [Human-Centered Artificial Intelligence: Three Fresh Ideas](https://aisel.aisnet.org/thci/vol12/iss3/1/)|  |  |
-|14	|  19 Oct  | Data Quality Assessment | [ Data validation for machine learning](https://mlsys.org/Conferences/2019/doc/2019/167.pdf) <br> [Automating Large-Scale Data Quality Verification](http://www.vldb.org/pvldb/vol11/p1781-schelter.pdf) |  | |
-|15	|  21 Oct  | Quality Assessment | [The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/aad9f93b86b7addfea4c419b9100c6cdd26cacea.pdf)<br>BIS book: Chapter 15| | |
-|16	|  26 Oct  | Continuous Delivery | |  |  |
-|17	|  28 Oct  | AI principles | [Principled Artificial Intelligence: Mapping Consensus in Ethical and Rights-based Approaches to Principles for AI](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3518482)|  |  |
-|18	|  2 Nov  | AI principles Overview |  |  |
-|19	|  4 Nov  | Safety|[Autonomous Vehicle Safety: An Interdisciplinary Challenge](https://ieeexplore.ieee.org/abstract/document/7823109)<br>[An Analysis of ISO 26262: Using Machine Learning Safely in Automotive Software](https://arxiv.org/pdf/1709.02435.pdf) | | | 
-|20	|  9 Nov  | Security and Privacy| [SoK: Towards the Science of Security and Privacy in Machine Learning](https://arxiv.org/pdf/1611.03814.pdf) <br>[Designing privacy-aware internet of things applications](https://www.sciencedirect.com/science/article/pii/S0020025519309120?casa_token=gj30woV-fm4AAAAA:4XFjzxa8dhskuzkc1PSjTm8FFIXbj1DEp-MUPvtsWCyaYtvoSqzHuyeHy1QqXjtUvCu0k0OfHA)| | |
-|21	|  11 Nov  | Accountability/Auditing | [Closing the AI Accountability Gap: Defining an End-to-End Framework for Internal Algorithmic Auditing](https://dl.acm.org/doi/pdf/10.1145/3351095.3372873?casa_token=ETIdzxHvH-MAAAAA:DJKwhwzspR3Rb2Z2RuDMTDcl4L2te37a-4GdqkmRhPyC3zCLL0wledNr1v-HKnqrd4kIKeYGLRXQ) <br>[Toward Trustworthy AI Development: Mechanisms for Supporting Verifiable Claims (Section 2 and 3)](https://arxiv.org/pdf/2004.07213.pdf)|  | | |
-|22	|  16 Nov  | Transparent and Explainability |[Explainable machine learning in deployment](https://dl.acm.org/doi/abs/10.1145/3351095.3375624) <br>[Designing Theory-Driven User-Centric Explainable AI](https://dl.acm.org/doi/pdf/10.1145/3290605.3300831?casa_token=TvYM-Ik6lakAAAAA:bLF4QklCqOopi6TBhZekzVhfmV2o226OcvSGSYQ5VYwh7mD1gRBkxMDbZ7no1oQRnNMw0uMJoUGX) |  | |
-|23	|  18 Nov  | Transparent and Explainability | |  | |
-|24	|  23 Nov  | Fairness | [Co-Designing Checklists to Understand Organizational Challenges and Opportunities around Fairness in AI](http://www.jennwv.com/papers/checklists.pdf)|  | |
-|25	|  25 Nov  | Value in AI Design | [“The Human Body is a Black Box”: Supporting Clinical Decision-Making with Deep Learning](https://dl.acm.org/doi/pdf/10.1145/3351095.3372827) |  |  |
-|26	|  30 Nov  | Value in AI Design | |  |  |
-|27	|  2 Dec | TBD | | |  |  
+|12	|  15 Oct (READING WEEK MakeUp Class)  | Human-AI Interaction Design | [Guidelines for Human-AI Interaction](https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/)| | |
+|13	|  19 Oct  | Human-AI Interaction Design | BIS book: Chapter 5-8 <br> [Human-Centered Artificial Intelligence: Three Fresh Ideas](https://aisel.aisnet.org/thci/vol12/iss3/1/)|  |  |
+|14	|  21 Oct  | Data Quality Assessment | [ Data validation for machine learning](https://mlsys.org/Conferences/2019/doc/2019/167.pdf) <br> [Automating Large-Scale Data Quality Verification](http://www.vldb.org/pvldb/vol11/p1781-schelter.pdf) |  | |
+|15	|  26 Oct  | Quality Assessment | [The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/aad9f93b86b7addfea4c419b9100c6cdd26cacea.pdf)<br>BIS book: Chapter 15| | |
+|16	|  28 Oct  | Continuous Delivery | |  |  |
+|17	|  2 Nov  | AI principles | [Principled Artificial Intelligence: Mapping Consensus in Ethical and Rights-based Approaches to Principles for AI](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3518482)|  |  |
+|18	|  4 Nov  | AI principles Overview |  |  |
+|19	|  9 Nov  | Safety|[Autonomous Vehicle Safety: An Interdisciplinary Challenge](https://ieeexplore.ieee.org/abstract/document/7823109)<br>[An Analysis of ISO 26262: Using Machine Learning Safely in Automotive Software](https://arxiv.org/pdf/1709.02435.pdf) | | | 
+|20	|  11 Nov  | Security and Privacy| [SoK: Towards the Science of Security and Privacy in Machine Learning](https://arxiv.org/pdf/1611.03814.pdf) <br>[Designing privacy-aware internet of things applications](https://www.sciencedirect.com/science/article/pii/S0020025519309120?casa_token=gj30woV-fm4AAAAA:4XFjzxa8dhskuzkc1PSjTm8FFIXbj1DEp-MUPvtsWCyaYtvoSqzHuyeHy1QqXjtUvCu0k0OfHA)| | |
+|21	|  16 Nov  | Accountability/Auditing | [Closing the AI Accountability Gap: Defining an End-to-End Framework for Internal Algorithmic Auditing](https://dl.acm.org/doi/pdf/10.1145/3351095.3372873?casa_token=ETIdzxHvH-MAAAAA:DJKwhwzspR3Rb2Z2RuDMTDcl4L2te37a-4GdqkmRhPyC3zCLL0wledNr1v-HKnqrd4kIKeYGLRXQ) <br>[Toward Trustworthy AI Development: Mechanisms for Supporting Verifiable Claims (Section 2 and 3)](https://arxiv.org/pdf/2004.07213.pdf)|  | | |
+|22	|  18 Nov  | Transparent and Explainability |[Explainable machine learning in deployment](https://dl.acm.org/doi/abs/10.1145/3351095.3375624) <br>[Designing Theory-Driven User-Centric Explainable AI](https://dl.acm.org/doi/pdf/10.1145/3290605.3300831?casa_token=TvYM-Ik6lakAAAAA:bLF4QklCqOopi6TBhZekzVhfmV2o226OcvSGSYQ5VYwh7mD1gRBkxMDbZ7no1oQRnNMw0uMJoUGX) |  | |
+|23	|  23 Nov  | Transparent and Explainability | |  | |
+|24	|  25 Nov  | Fairness | [Co-Designing Checklists to Understand Organizational Challenges and Opportunities around Fairness in AI](http://www.jennwv.com/papers/checklists.pdf)|  | |
+|25	|  30 Nov  | Value in AI Design | [“The Human Body is a Black Box”: Supporting Clinical Decision-Making with Deep Learning](https://dl.acm.org/doi/pdf/10.1145/3351095.3372827) |  |  |
+|26	|  2 Dec  | Value in AI Design | |  |  |
  
 
 # Credit:
