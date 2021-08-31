@@ -8,7 +8,7 @@
 | Class Time    | TR 2:35 am-3:55 pm | 
 | TA Office Hours    | TBD | 
 | Location      | BURN 1B24  |
-| Discussion Forum | Slack |
+| Discussion Forum | [Slack](https://join.slack.com/t/dbis-mcgill-fall2021/shared_invite/zt-uypgf1qv-hQcez1GwgZ2hxhdcdBaGSQ) |
 
 
 - I normally design many in-class activities for upper-level classes to motivate discussion and collaborative learning. Therefore, it is important to attend the lectures in order to gain the best learning experience – it cannot be replaced by watching the videos afterward. If you have trouble attending the first few lectures due to travel constraints. I will try to accommodate that. The classroom seems not to be equipped with recording equipment. I will likely record my screen during the class in the first weeks.
