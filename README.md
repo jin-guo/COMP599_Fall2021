@@ -44,7 +44,7 @@ We will not concentrate on any particular resources. Instead, the readings will 
 
 | Lecture | Date | Content | Reading | Note | Discussant |
 | :---: |:---:| :---: | :---: | :---: | :---: |
-|1	|  2 Sep  | Introduction | BIS book: Chapter 1, 2 <br> TIS book: Intro (Onedrive) |  |  |
+|1	|  2 Sep  | [Introduction](slides/1-intro.pdf) | BIS book: Chapter 1, 2 <br> TIS book: Intro (Onedrive) |  |  |
 |2	|  7 Sep  | Intro to Modern Software Engineering  | [GOTO 2020 Talk• Taking Back "Software Engineering"](https://youtu.be/_N_jIrEBOpw)<br> [Quality Attributes](https://resources.sei.cmu.edu/asset_files/technicalreport/1995_005_001_16427.pdf)|  |
 |3	|  9 Sep  | AI Foundations (focusing on ML)|  |  |  |
 |4	|  14 Sep  | Model Selection, Evaluation and Documentation | BIS book: Chapter 19, 20 <br>[How NOT To Evaluate Your Dialogue System: An Empirical Study of Unsupervised Evaluation Metrics for Dialogue Response Generation](https://www.aclweb.org/anthology/D16-1230/) |  |  |
