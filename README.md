@@ -6,12 +6,12 @@
 | Instructor    | [Jin Guo](http://jguo-web.com/index.html)  |
 | TA | Deeksha Arya |
 | Class Time    | TR 2:35 am-3:55 pm | 
-| TA Office Hours    | TBD | 
+| TA Office Hours    | Zoom (Time and Link TBD) | 
 | Location      | BURN 1B24  |
 | Discussion Forum | [Slack](https://join.slack.com/t/dbis-mcgill-fall2021/shared_invite/zt-uypgf1qv-hQcez1GwgZ2hxhdcdBaGSQ) |
 
 
-- I normally design many in-class activities for upper-level classes to motivate discussion and collaborative learning. Therefore, it is important to attend the lectures in order to gain the best learning experience – it cannot be replaced by watching the videos afterward. If you have trouble attending the first few lectures due to travel constraints. I will try to accommodate that. The classroom seems not to be equipped with recording equipment. I will likely record my screen during the class in the first weeks.
+- I normally design many in-class activities for upper-level classes to motivate discussion and collaborative learning. However, given the risks of going to a classroom and other constraints you might have, I will allow people to join remotely through Zoom for the first few weeks. The zoom session will also be recorded.  We will adjust as the semester goes.
 
 ## Description
 This course is going to explore how to design and build an intelligent system from a software engineering perspective, from requirement gathering and analysis to deployment and maintenance. We will also touch AI ethics and its implications to design.
@@ -46,21 +46,21 @@ We will not concentrate on any particular resources. Instead, the readings will 
 | :---: |:---:| :---: | :---: | :---: | :---: |
 |1	|  2 Sep  | Introduction | BIS book: Chapter 1, 2 <br> TIS book: Intro (Onedrive) |  |  |
 |2	|  7 Sep  | Intro to Modern Software Engineering  | [GOTO 2020 Talk• Taking Back "Software Engineering"](https://youtu.be/_N_jIrEBOpw)<br> [Quality Attributes](https://resources.sei.cmu.edu/asset_files/technicalreport/1995_005_001_16427.pdf)|  |
-|3	|  9 Sep  | Intro to Modern Software Engineering (cont'd)|  |  |  |
-|4	|  14 Sep  | AI basics (focusing on ML | BIS book: Chapter 16, 17, 18 <br> Human Compatible: Intelligence (Onedrive) |  |  |
-|5	|  16 Sep  | Model Selection and Evaluation |BIS book: Chapter 19, 20 <br>[How NOT To Evaluate Your Dialogue System: An Empirical Study of Unsupervised Evaluation Metrics for Dialogue Response Generation](https://www.aclweb.org/anthology/D16-1230/) |  |  |
-|6	|  21 Sep  | Model Selection and Evaluation (cont'd) | [Hidden Technical Debt in Machine Learning Systems](https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf) | | |
-|7	|  23 Sep  | Model -> System | [Software Engineering for Machine Learning: A Case Study](https://www.microsoft.com/en-us/research/uploads/prod/2019/03/amershi-icse-2019_Software_Engineering_for_Machine_Learning.pdf)  <br> TIS book: Chapter 4 Why Systems Suprise Us (Onedrive) |  |
-|8	|  28 Sep  | Data Acquisition & Management | BIS book: Chapter 9 <br>[A Survey on Data Collection for Machine Learning: A Big Data - AI Integration Perspective](https://ieeexplore.ieee.org/abstract/document/8862913) |  |  |
-|9	|  20 Sep  | Data Acquisition & Management (cont'd) ||  | |
-|10	|  5 Oct  | Requirement for (and) AI | [Requirements Engineering for Machine Learning: Perspectives from Data Scientists](https://arxiv.org/pdf/1908.04674.pdf)|  | |
-|11	|  7 Oct  |  Human-AI Interaction Design | [How Good is 85%? A Survey Tool to Connect Classifier Evaluation to Acceptability of Accuracy](http://www.mjskay.com/papers/chi_2015_accuracy-acceptability-mjskay.pdf)|  | |
-|12	|  15 Oct (READING WEEK MakeUp Class)  | Human-AI Interaction Design | [Guidelines for Human-AI Interaction](https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/)| | |
-|13	|  19 Oct  | Human-AI Interaction Design | BIS book: Chapter 5-8 <br> [Human-Centered Artificial Intelligence: Three Fresh Ideas](https://aisel.aisnet.org/thci/vol12/iss3/1/)|  |  |
-|14	|  21 Oct  | Data Quality Assessment | [ Data validation for machine learning](https://mlsys.org/Conferences/2019/doc/2019/167.pdf) <br> [Automating Large-Scale Data Quality Verification](http://www.vldb.org/pvldb/vol11/p1781-schelter.pdf) |  | |
-|15	|  26 Oct  | Quality Assessment | [The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/aad9f93b86b7addfea4c419b9100c6cdd26cacea.pdf)<br>BIS book: Chapter 15| | |
-|16	|  28 Oct  | Continuous Delivery | |  |  |
-|17	|  2 Nov  | AI principles | [Principled Artificial Intelligence: Mapping Consensus in Ethical and Rights-based Approaches to Principles for AI](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3518482)|  |  |
+|3	|  9 Sep  | AI Foundations (focusing on ML)|  |  |  |
+|4	|  14 Sep  | Model Selection, Evaluation and Documentation | BIS book: Chapter 19, 20 <br>[How NOT To Evaluate Your Dialogue System: An Empirical Study of Unsupervised Evaluation Metrics for Dialogue Response Generation](https://www.aclweb.org/anthology/D16-1230/) |  |  |
+|5	|  16 Sep  | From Model to System | [Software Engineering for Machine Learning: A Case Study](https://www.microsoft.com/en-us/research/uploads/prod/2019/03/amershi-icse-2019_Software_Engineering_for_Machine_Learning.pdf)  <br> TIS book: Chapter 4 Why Systems Suprise Us (Onedrive) |  |
+|6	|  21 Sep  | Data Acquisition & Management | BIS book: Chapter 9 <br>[A Survey on Data Collection for Machine Learning: A Big Data - AI Integration Perspective](https://ieeexplore.ieee.org/abstract/document/8862913) |  |  |
+|7	|  23 Sep  | Requirement for (and) AI | [Requirements Engineering for Machine Learning: Perspectives from Data Scientists](https://arxiv.org/pdf/1908.04674.pdf)|  | |
+|8	|  28 Sep  | Team and Collaboration ||  | |
+|9	|  20 Sep  | Team and Collaboration ||  | |
+|10	|  5 Oct  | Quality Assessment | [The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/aad9f93b86b7addfea4c419b9100c6cdd26cacea.pdf)<br>BIS book: Chapter 15| | |
+|11	|  7 Oct  |  Infrastucture, Deployment and Operation | |  | |
+|12	|  15 Oct (READING WEEK MakeUp Class)  | Design for Human-AI Interaction (UX) | [Guidelines for Human-AI Interaction](https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/) <br> Human-Centered Artificial Intelligence: Three Fresh Ideas](https://aisel.aisnet.org/thci/vol12/iss3/1/)| | |
+|13	|  19 Oct  | Design for Human-AI Interaction (data visualization, communication) ||  |  |
+|14	|  21 Oct  | Focus: Design for Learning |  |  | |
+|15	|  26 Oct  | Focus: Design for Decision-making | | | |
+|16	|  28 Oct  | Fcous: Design for Creativity | |  |  |
+|17	|  2 Nov  | Focus: Inclusive Design for AI | |  |  |
 |18	|  4 Nov  | AI principles Overview |  |  |
 |19	|  9 Nov  | Safety|[Autonomous Vehicle Safety: An Interdisciplinary Challenge](https://ieeexplore.ieee.org/abstract/document/7823109)<br>[An Analysis of ISO 26262: Using Machine Learning Safely in Automotive Software](https://arxiv.org/pdf/1709.02435.pdf) | | | 
 |20	|  11 Nov  | Security and Privacy| [SoK: Towards the Science of Security and Privacy in Machine Learning](https://arxiv.org/pdf/1611.03814.pdf) <br>[Designing privacy-aware internet of things applications](https://www.sciencedirect.com/science/article/pii/S0020025519309120?casa_token=gj30woV-fm4AAAAA:4XFjzxa8dhskuzkc1PSjTm8FFIXbj1DEp-MUPvtsWCyaYtvoSqzHuyeHy1QqXjtUvCu0k0OfHA)| | |
@@ -69,7 +69,7 @@ We will not concentrate on any particular resources. Instead, the readings will 
 |23	|  23 Nov  | Transparent and Explainability | |  | |
 |24	|  25 Nov  | Fairness | [Co-Designing Checklists to Understand Organizational Challenges and Opportunities around Fairness in AI](http://www.jennwv.com/papers/checklists.pdf)|  | |
 |25	|  30 Nov  | Value in AI Design | [“The Human Body is a Black Box”: Supporting Clinical Decision-Making with Deep Learning](https://dl.acm.org/doi/pdf/10.1145/3351095.3372827) |  |  |
-|26	|  2 Dec  | Value in AI Design | |  |  |
+|26	|  2 Dec  | Presentation | |  |  |
  
 
 # Credit:
