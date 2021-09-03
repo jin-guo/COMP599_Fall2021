@@ -13,6 +13,8 @@
 
 - I normally design many in-class activities for upper-level classes to motivate discussion and collaborative learning. However, given the risks of going to a classroom and other constraints you might have, I will allow people to join remotely through Zoom for the first few weeks. The zoom session will also be recorded.  We will adjust as the semester goes.
 
+- Please fill in this [background survey](https://forms.gle/XrrcWoy2axsLsYA8A) and [topic preference as discussant](https://forms.gle/h7FhpscYqDKaQzzr5) before Sept 7th.
+
 ## Description
 This course is going to explore how to design and build an intelligent system from a software engineering perspective, from requirement gathering and analysis to deployment and maintenance. We will also touch AI ethics and its implications to design.
 
