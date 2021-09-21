@@ -6,7 +6,7 @@
 | Instructor    | [Jin Guo](http://jguo-web.com/index.html)  |
 | TA | Deeksha Arya |
 | Class Time    | TR 2:35 am-3:55 pm | 
-| TA Office Hours    | Zoom (Time and Link TBD) | 
+| TA Office Hours    | Zoom (Tuesday 9:20-10:20am) | 
 | Location      | BURN 1B24  |
 | Discussion Forum | [Slack](https://join.slack.com/t/dbis-mcgill-fall2021/shared_invite/zt-uypgf1qv-hQcez1GwgZ2hxhdcdBaGSQ) |
 
