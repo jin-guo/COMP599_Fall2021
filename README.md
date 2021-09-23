@@ -54,7 +54,7 @@ We will not concentrate on any particular resources. Instead, the readings will 
 |6	|  21 Sep  | Data Acquisition & Management | BIS book: Chapter 9 <br>[A Survey on Data Collection for Machine Learning: A Big Data - AI Integration Perspective](https://ieeexplore.ieee.org/abstract/document/8862913) |  |  |
 |7	|  23 Sep  | Requirement and AI | [Requirements Engineering for Machine Learning: Perspectives from Data Scientists](https://arxiv.org/pdf/1908.04674.pdf)|  | |
 |8	|  28 Sep  | Requirement for (and) AI (cont'd) <br>Team and Collaboration ||  | |
-|9	|  20 Sep  | Team and Collaboration ||  | |
+|9	|  30 Sep  | Team and Collaboration ||  | |
 |10	|  5 Oct  | Quality Assessment | [The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/aad9f93b86b7addfea4c419b9100c6cdd26cacea.pdf)<br>BIS book: Chapter 15| | |
 |11	|  7 Oct  |  Infrastucture, Deployment and Operation | |  | |
 |12	|  15 Oct (READING WEEK MakeUp Class)  | Design for Human-AI Interaction (UX) | [Guidelines for Human-AI Interaction](https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/) <br> Human-Centered Artificial Intelligence: Three Fresh Ideas](https://aisel.aisnet.org/thci/vol12/iss3/1/)| | |
