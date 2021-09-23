@@ -53,7 +53,7 @@ We will not concentrate on any particular resources. Instead, the readings will 
 |5	|  16 Sep  | [From Model to System](Slides/5-MLSystems.pdf) | [Software Engineering for Machine Learning: A Case Study](https://www.microsoft.com/en-us/research/uploads/prod/2019/03/amershi-icse-2019_Software_Engineering_for_Machine_Learning.pdf)<br>[Hidden Technical Debt in Machine Learning Systems](https://papers.nips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf)<br> TIS book: Chapter 4 Why Systems Suprise Us ([Onedrive](https://mcgill-my.sharepoint.com/:f:/g/personal/jin_guo_mcgill_ca/Eo5CX7bUU4BGgV-WydEjn9wBQK6bUy12jztTVC5gNCP8yQ?e=8XDaog)) |  | [Saskia](https://docs.google.com/presentation/d/1LUP5X9vtcH-ymbI8wbPgC7wnSgM58w9Ic0F643DL3OA/edit?usp=sharing) |
 |6	|  21 Sep  | Data Acquisition & Management | BIS book: Chapter 9 <br>[A Survey on Data Collection for Machine Learning: A Big Data - AI Integration Perspective](https://ieeexplore.ieee.org/abstract/document/8862913) |  |  |
 |7	|  23 Sep  | Requirement and AI | [Requirements Engineering for Machine Learning: Perspectives from Data Scientists](https://arxiv.org/pdf/1908.04674.pdf)|  | |
-|8	|  28 Sep  | Requirement for (and) AI (cont'd) <br>Team and Collaboration | [Design Values: Hard-Coding Liberation?](https://design-justice.pubpub.org/pub/3h2zq86d/release/1)|  | |
+|8	|  28 Sep  | Requirement for (and) AI (cont'd) <br>Team and Collaboration | |  | |
 |9	|  30 Sep  | Team and Collaboration ||  | |
 |10	|  5 Oct  | Quality Assessment | [The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/aad9f93b86b7addfea4c419b9100c6cdd26cacea.pdf)<br>BIS book: Chapter 15| | |
 |11	|  7 Oct  |  Infrastucture, Deployment and Operation | |  | |
@@ -62,7 +62,7 @@ We will not concentrate on any particular resources. Instead, the readings will 
 |14	|  21 Oct  | Focus: Design for Learning |  |  | |
 |15	|  26 Oct  | Focus: Design for Decision-making | | | |
 |16	|  28 Oct  | Fcous: Design for Creativity | |  |  |
-|17	|  2 Nov  | Focus: Inclusive Design for AI | |  |  |
+|17	|  2 Nov  | Focus: Inclusive Design for AI | [Design Values: Hard-Coding Liberation?](https://design-justice.pubpub.org/pub/3h2zq86d/release/1) |  |  |
 |18	|  4 Nov  | AI principles Overview |  |  |
 |19	|  9 Nov  | Safety|[Autonomous Vehicle Safety: An Interdisciplinary Challenge](https://ieeexplore.ieee.org/abstract/document/7823109)<br>[An Analysis of ISO 26262: Using Machine Learning Safely in Automotive Software](https://arxiv.org/pdf/1709.02435.pdf) | | | 
 |20	|  11 Nov  | Security and Privacy| [SoK: Towards the Science of Security and Privacy in Machine Learning](https://arxiv.org/pdf/1611.03814.pdf) <br>[Designing privacy-aware internet of things applications](https://www.sciencedirect.com/science/article/pii/S0020025519309120?casa_token=gj30woV-fm4AAAAA:4XFjzxa8dhskuzkc1PSjTm8FFIXbj1DEp-MUPvtsWCyaYtvoSqzHuyeHy1QqXjtUvCu0k0OfHA)| | |
