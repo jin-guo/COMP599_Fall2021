@@ -2,12 +2,15 @@
 
 ## Server
 
-1. Each team has a dedicated server on which to run their project, and each of the teammembers have been granted access to it. To access the appropriate machine: `ssh {CS_USERNAME}@fall2021-comp598-{TEAM_NUMBER}.cs.mcgill.ca`. Feel free to copy over your **public** ssh keys so you don't have to type in your password every time you log in.
-2. Check that you can access the Movie API service: `curl http://fall2020-comp598.cs.mcgill.ca:8080/user/{USER_ID}`
-3. Check that docker is running: `ps aux | grep docker`
-4. Check that your service is running by visiting [`http://fall2021-comp598-{TEAM_NUMBER}.cs.mcgill.ca:8082/recommend/{USER_ID}`](http://fall2021-comp598-{TEAM_NUMBER}.cs.mcgill.ca:8082/recommend/{USER_ID}). This should return a comma-separated list of 20 movie recommendations, from most to least highly recommended for `USER_ID`.
+1. Each team has a dedicated server on which to run their project, and each of the teammembers have been granted access to it. To access the appropriate machine: `ssh {CS_USERNAME}@fall2021-comp598-{TEAM_NUMBER}.cs.mcgill.ca`. Feel free to copy over your **public** ssh keys into `~/.ssh/authorized_keys` so you don't have to type in your password every time you log in.
+2. Each server has a common user **team-{TEAM_NUMBER}** that you can all use to log in for collaborative work and deployment, should you like to work that way. Your ssh keys will be added to the user as you send them to me, after which you can access the appropriate machine as: `ssh team-{TEAM_NUMBER}@fall2021-comp598-{TEAM_NUMBER}.cs.mcgill.ca`
+3. Check that you can access the Movie API service: `curl http://fall2020-comp598.cs.mcgill.ca:8080/user/{USER_ID}`
+4. Check that docker is running: `ps aux | grep docker`
+5. Check that your service is running by visiting [`http://fall2021-comp598-{TEAM_NUMBER}.cs.mcgill.ca:8082/recommend/{USER_ID}`](http://fall2021-comp598-{TEAM_NUMBER}.cs.mcgill.ca:8082/recommend/{USER_ID}). This should return a comma-separated list of 20 movie recommendations, from most to least highly recommended for `USER_ID`.
 
 ## Docker Container
+
+Docker Introduction and Tutorial: https://docs.docker.com/get-started/overview/
 
 1. Create a Dockerfile to set up the environment that you need: `https://docs.docker.com/get-started/`
 2. Build your docker image, and run it in a container:
