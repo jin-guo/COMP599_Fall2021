@@ -59,8 +59,8 @@ We will not concentrate on any particular resources. Instead, the readings will 
 |11	|  7 Oct  |  [System Quality](Slides/10-SystemQuality.pdf)| |  | [Avinash](Slides/Avinash-MLOps.pdf) |
 |12	|  15 Oct (READING WEEK MakeUp Class)  | [Continous Delivery](Slides/11-CD.pdf)  <br> [Design for Human-AI Interaction (UX)](Slides/12-HAI.pdf) | [Guidelines for Human-AI Interaction](https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/) <br> [Human-Centered Artificial Intelligence: Three Fresh Ideas](https://aisel.aisnet.org/thci/vol12/iss3/1/)| | |
 |13	|  19 Oct  | Design for Human-AI Interaction (data visualization, communication) ||  |  |
-|14	|  21 Oct  | Focus: Design for Learning |  |  | |
-|15	|  26 Oct  | Focus: Design for Decision-making | | | |
+|14	|  21 Oct  | Focus: Design for Decision-making |  |  | |
+|15	|  26 Oct  | Focus: Design for Learning | | | |
 |16	|  28 Oct  | Fcous: Design for Creativity | |  |  |
 |17	|  2 Nov  | Focus: Inclusive Design for AI | [Design Values: Hard-Coding Liberation?](https://design-justice.pubpub.org/pub/3h2zq86d/release/1) |  |  |
 |18	|  4 Nov  | AI principles Overview |  |  |
