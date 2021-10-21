@@ -58,11 +58,11 @@ We will not concentrate on any particular resources. Instead, the readings will 
 |10	|  5 Oct  | [Data Quality](Slides/9-DataQuality.pdf) | [The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/aad9f93b86b7addfea4c419b9100c6cdd26cacea.pdf)<br>BIS book: Chapter 15| | |
 |11	|  7 Oct  |  [System Quality](Slides/10-SystemQuality.pdf)| |  | [Avinash](Slides/Avinash-MLOps.pdf) |
 |12	|  15 Oct (READING WEEK MakeUp Class)  | [Continous Delivery](Slides/11-CD.pdf)  <br> [Design for Human-AI Interaction (UX)](Slides/12-HAI.pdf) | [Guidelines for Human-AI Interaction](https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/) <br> [Human-Centered Artificial Intelligence: Three Fresh Ideas](https://aisel.aisnet.org/thci/vol12/iss3/1/)| | |
-|13	|  19 Oct  | Design for Human-AI Interaction (data visualization, communication) ||  |  |
-|14	|  21 Oct  | Focus: Design for Decision-making |  |  | |
-|15	|  26 Oct  | Focus: Design for Learning | | | |
-|16	|  28 Oct  | Fcous: Design for Creativity | |  |  |
-|17	|  2 Nov  | Focus: Inclusive Design for AI | [Design Values: Hard-Coding Liberation?](https://design-justice.pubpub.org/pub/3h2zq86d/release/1) |  |  |
+|13	|  19 Oct  | Design - Visualization | [Will you accept an imperfect AI? exploring designs for adjusting end-user expectations of AI systems](https://www.microsoft.com/en-us/research/uploads/prod/2019/01/chi19_kocielnik_et_al.pdf)<br>[When (ish) is my bus? user-centered visualizations of uncertainty in everyday, mobile predictive systems](https://idl.cs.washington.edu/files/2016-WhenIsMyBus-CHI.pdf)<br>[The state of the art in integrating machine learning into visual analytics](https://arxiv.org/abs/1802.07954)|  |  |
+|14	|  21 Oct  | Design - Decision-making |  |  | |
+|15	|  26 Oct  | Design - Learning | | | |
+|16	|  28 Oct  | Design - Creativity | |  |  |
+|17	|  2 Nov  |  Design - Inclusiveness  | [Design Values: Hard-Coding Liberation?](https://design-justice.pubpub.org/pub/3h2zq86d/release/1) |  |  |
 |18	|  4 Nov  | AI principles Overview |  |  |
 |19	|  9 Nov  | Safety|[Autonomous Vehicle Safety: An Interdisciplinary Challenge](https://ieeexplore.ieee.org/abstract/document/7823109)<br>[An Analysis of ISO 26262: Using Machine Learning Safely in Automotive Software](https://arxiv.org/pdf/1709.02435.pdf) | | | 
 |20	|  11 Nov  | Security and Privacy| [SoK: Towards the Science of Security and Privacy in Machine Learning](https://arxiv.org/pdf/1611.03814.pdf) <br>[Designing privacy-aware internet of things applications](https://www.sciencedirect.com/science/article/pii/S0020025519309120?casa_token=gj30woV-fm4AAAAA:4XFjzxa8dhskuzkc1PSjTm8FFIXbj1DEp-MUPvtsWCyaYtvoSqzHuyeHy1QqXjtUvCu0k0OfHA)| | |
