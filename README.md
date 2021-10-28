@@ -75,7 +75,7 @@ We will not concentrate on any particular resources. Instead, the readings will 
  
 
 # Credit:
-The content of this course is greatly inspired by [CMU 17-445/645: Software Engineering for AI-Enabled Systems](https://ckaestne.github.io/seai/) which is developed by [Christian Kästner](http://www.cs.cmu.edu/~ckaestne/) et. al.
+The content regarding engineering aspects is greatly inspired by [CMU 17-445/645: Software Engineering for AI-Enabled Systems](https://ckaestne.github.io/seai/) which is developed by [Christian Kästner](http://www.cs.cmu.edu/~ckaestne/) et. al.
 
 # License
 
