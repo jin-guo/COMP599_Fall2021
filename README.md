@@ -4,7 +4,7 @@
 |||
 | :---: | ------------- |
 | Instructor    | [Jin Guo](http://jguo-web.com/index.html)  |
-| TA | Deeksha Arya |
+| TA | [Deeksha Arya](https://cs.mcgill.ca/~darya2) |
 | Class Time    | TR 2:35 am-3:55 pm | 
 | TA Office Hours    | Zoom (Tuesday 9:20-10:20am) | 
 | Location      | BURN 1B24  |
