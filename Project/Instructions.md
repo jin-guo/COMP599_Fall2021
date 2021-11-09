@@ -59,3 +59,41 @@ For this milestone, we do not care about specifics of how you learn or deploy yo
 
 **Grading:** This milestone is worth 100 points: 10 for the description of the learning process and 20 for providing an implementation, 10 for the description of the inference service and 20 for an implementation, 20 points for actually answering the to the API queries, and 20 points for providing the quested documentation about teamwork. For the most part, we will only assess whether the work was completed, not attempt to evaluate the quality of the work.
 
+## Milestone 2: Model and Infrastructure Quality
+
+**Learning goals:**
+
+* Test all components of the learning infrastructure
+* Build infrastructure to assess model and data quality
+* Build an infrastructure to evaluate a model in production
+* Use continuous integration to test infrastructure and models
+
+**Tasks:** First, evaluate the quality of your model both offline and online. For the offline evaluation, consider an appropriate strategy (e.g., suitable accuracy measure, training-validation split, important subpopulations, considering data dependence). For the online evaluation, design and implement a strategy to evaluate model quality in production (e.g., chose and justify metric, collect telemetry).
+
+Second, if you have not done so already, migrate your learning infrastructure to a format that is easy to maintain and test. That will likely involve moving out of a notebook and splitting code for different steps in the pipeline into separate modules that can be called independently. Test all steps of your pipeline so that you have reasonable confidence in the correctness, robustness, and possibly other qualities of your learning solution. Also test the correctness of your inference service. Design, implement, and test a strategy to deal with data quality problems.
+
+Finally, automate all your tests in a continuous integration platform. The platform should automatically build and test your pipeline and inference service implementation and create test and coverage reports. The platform should also automatically trigger learning and evaluating a new model whenever pipeline code changes and report offline accuracy results.
+
+**Technical details:** At this point, we do require that you work regularly with Git for all your code and changes. Make reasonably cohesive commits with appropriate commit messages. We recommend adopting a process with your team in which you use pull requests to review and integrate changes, and leverage Issues and begin discussion threads for communication about design and the code.
+
+The pipeline refers to all parts of the learning process. For example, it should have functionality to gather training/evaluation data from the Kafka stream and the provided APIs (and possibly other data sources), to clean data, and extract features, train models, evaluate predictions, serialize models, serve models, and collect telemetry. All those steps should be reasonably robust and repeatable. You may store intermediate results in files or databases on your virtual machine if you like, but you should be able to recreate that data from scratch with your infrastructure. Overall, the implementation should make it easy to run the pipeline for experimentation (e.g., after changing model parameters) or on more recent data.
+
+Evaluate *infrastructure code quality* by testing all steps in your model learning and evaluation pipeline. Use automated unit tests and report test coverage. For unit testing consider Python's builtin `unittest` or the external `nose2` or `pytest`; `coverage.py` or `Pytest-cov` can be used to measure coverage. You may want to refactor your code, e.g., extract the code that parses a line from Kafka as a separate function, to make it
+easier to test. You may consider the use of mocks or stubs for testing. Make decisions about how much testing is appropriate to gain confidence in the correctness and robustness of your solution.
+
+Set up an continuous integration service. You could install Jenkins on your virtual machine or use a cloud service, such as Travis-CI, Circle-CI or others. You may use the same or different services for testing the infrastructure and automating the learning process.
+
+You do not need to create a visual frontend for this milestone, but model-quality reports and continuous-integration reports should be stored in a readable format (preferably machine readable, e.g., JSON, for future automation).
+
+For data quality, focus on data schema issues, missing data, and duplicate data; you do not need to attempt to detect drift. During and after this assignment, we may inject data quality issues in the Kafka stream or provided API or we may make invalid requests to your API. Try to make your service robust, such that it continues to work despite such problems.
+
+If you face storage issues, **please refer to this [post](https://github.com/COMP599Fall2021/IssuesAndQuestions/issues/10)**. If you still face issues or hit other resource limits of your virtual machine, please create a new issue in the repository as soon as possible.
+
+**Deliverables:** Submit your code to Github and tag it with `M2_done` and submit (by email to Jin and Deeksha) a short report that describes the following:
+
+* Offline evaluation (1 page max): Briefly explain how you conduct your offline evaluation. This just include a description of the validation/test data and how it was derived (including a discussion of data dependence and important subpopulation if appropriate) and a brief description and justification of the used metric. Include or link to evaluation results in your report. Provide a pointer to the corresponding implementation in your code (preferably a direct GitHub link).
+* Data quality (0.5 pages max): Briefly describe the steps you have taken with regard to data quality and provide a pointer to the corresponding implementation in your code (preferably a direct GitHub link).
+* Pipeline implementation and testing (1 page max): Briefly describe how you structured the implementation of your pipeline and how you conducted testing. Include or link to a coverage report. Briefly argue why you think the testing is adequate. Provide a pointer to the corresponding implementation and test suite in your code (preferably a direct GitHub link).
+* Continuous integration (0.5 pages max): Describe your continuous integration setup both for infrastructure testing and for automatically training and evaluating models. Provide a pointer to the service (and credentials if needed to access the platform).
+
+**Grading:** This milestone is worth 100 points: 20 for the pipeline implementation and corresponding code and commit quality, 20 points for data quality checks, 20 points for suitable offline model quality assessment, 20 points for good infrastructure testing and an adequacy argument, and 20 points for using continuous integration.
