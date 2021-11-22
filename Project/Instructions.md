@@ -97,3 +97,82 @@ If you face storage issues, **please refer to this [post](https://github.com/COM
 * Continuous integration (0.5 pages max): Describe your continuous integration setup both for infrastructure testing and for automatically training and evaluating models. Provide a pointer to the service (and credentials if needed to access the platform).
 
 **Grading:** This milestone is worth 100 points: 20 for the pipeline implementation and corresponding code and commit quality, 20 points for data quality checks, 20 points for suitable offline model quality assessment, 20 points for good infrastructure testing and an adequacy argument, and 20 points for using continuous integration.
+
+## Milestone 3: Monitoring and Continuous Deployment
+
+**Learning goals:**
+
+* Deploy a model inference service with containers
+* Build and operate a monitoring infrastructure for system health and model quality
+* Build a continuous delivery pipeline with canary releases and deploy model updates without downtime
+* Infrastructure for automatic periodic retraining of models
+* Version and track provenance of training data and models
+
+**Tasks:** After gaining confidence in your infrastructure quality and automating essential tasks, we will now focus on deployment, versioning, and monitoring. 
+
+First, containerize your model inference service (and possibly other parts of your infrastructure) and add support for switching between different versions without downtime (e.g., adding a load balancer).
+
+Second, set up a monitoring infrastructure that monitors the health of your recommendation service (including availability) and the quality of its predictions. You might want to set up automated alerts if problems are detected.
+
+Third, build a continuous deployment pipeline where models are automatically pushed into production via a [canary release](https://landing.google.com/sre/workbook/chapters/canarying-releases/) process once they passed offline quality checks. Automate the entire process so that the model learning and deployment process can be triggered with a single command-line call. Further automate the process that models are updated and deployed every 3 days with new production data. Test that poor releases are actually aborted without impacting too many users.
+
+Finally, track provenance of your models such that for every prediction your recommendation service makes you can answer: (1) which version of the model has made the prediction, (2) which version of the pipeline code and ML frameworks has been used to train that model, and (3) what data has been used for training that model.
+
+Keep your recommendation service running as much as possible for the remainder of the project. Prefer poor recommendations over missing or very slow answers from your service. We will look at the logs (public, in the Kafka stream) to assess downtime. 
+
+**Technical details:** We recommend Docker to containerize your model serving infrastructure. You can package the model inside the container or have the container load the model from an external resource (e.g., mounted file system or web server). Your continuous integration/deployment infrastructure should automatically build a new container when needed. You can write your own simple load balancer in 10 lines of Python or Node.js code with `flask` or `express`, if needed, so you can switch between multiple models without downtime.
+
+We recommend to mostly use existing infrastructure for monitoring, such as `Grafana`. You may also use external cloud services if you prefer. Monitor at least availability of your service (e.g., by analyzing the Kafka logs) and the model quality through online evaluation metrics.
+
+For canary releases, you can write your own infrastructure or use an external library or service (e.g., LaunchDarkly or split.io). Releases may be triggered by code changes from your continuous integration service, manually from the command line, or periodically from a scheduler (e.g., `cron`). You could use your own simple load balancer to route traffic to different model servers depending on which users should see which model. You can use your existing telemetry data to make decisions about continuing or aborting the release (5 bonus points for using appropriate statistics for making this decision). Automatically send emails for successful or aborted releases.
+
+Regarding provenance, you have full flexibility. You may use a tool like [`dvc`](https://dvc.org/) or write your own mechanisms. The key point is to being able to track all inputs used for a prediction when needed, e.g., for debugging. Consider tradeoffs among different qualities, such as the amount of data stored and the effort in retrieving it.
+
+Although we do not set explicit requirements for quality assurance, we suggest that you continue to write test cases for your infrastructure code and conduct code reviews within your team.
+
+If you hit resource limits of your virtual machine, contact the course staff.
+
+**Deliverables:** Submit your code to Github and tag it with `M3_done` and submit (by email to Jin and Deeksha) a short report that describes the following:
+
+* Containerization (0.5 pages max): Briefly describe how you containerized and deployed your inference service and where/how you automatically create containers as part of the continuous integration process.  Provide a pointer to the Dockerfile(s) and other relevant implementations (preferably a direct GitHub link).
+* Monitoring (0.5 pages text max): Briefly describe how you set up your monitoring infrastructure and what you monitor and whether and why you set alerts. Include a screenshot of your dashboard showing at least availability and model quality measures. Provide pointers to the corresponding code/infrastructure (preferably a direct GitHub link) and explain how we can access your dashboard (include credentials if needed).
+* Online evaluation (1 page max): Briefly describe the metric used for evaluating model quality in production, the telemetry data collected, and the operationalization of the metric. Include or link to evaluation results in your report. Provide a pointer to the corresponding implementation in your code (preferably a direct GitHub link).
+* Canary releases (1 pages max): Briefly describe how you automate deployments and perform canary releases. Describe how you trigger releases and how the canary release process is implemented (e.g., load balancer, metrics, when to abort). If statistics are used to make decisions in the process explain and justify their use. Include evidence of at least one successful release and one aborted release. Provide pointers to your implementation/infrastructure and log files produced.
+* Provenance (2 pages max): Describe how you version and track provenance of models. Explain how you can, for any past recommendation, identify the model version, the used pipeline version, and the used training data. Give a concrete example with one past recommendation. Provide sufficient pointers such that the course staff could also identify the corresponding information for a given recommendation.
+
+**Grading:** This milestone is worth 100 points: 5 for containerization, 30 for monitoring availability and model quality (15 for service avaialablity and 15 for model quality), 40 for automated canary releases (including 10 for automatic model builds, 15 for incremental rollouts with automated decisions, 5 for automated notifications of successful and failed releases, 5 for evidence a successful and a correctly aborted release, and 5 for automatic regular releases), 25 points for provenance tracking.
+
+
+
+## Final Report and Presentation
+
+**Learning goals:**
+
+* Analyze the feedback loops, fairness, and adversarial attacks in machine-learning systems
+* Design and implement a monitoring strategy to detect feedback loops and attacks
+* Reflect on the quality and operation of an AI-enabled system
+
+**Tasks:** Up to this point, the project focused on implementing and testing functionality, but you also now have multiple weeks of making recommendations and observing their effects. This final part has two steps: (1) reflection on the infrastructure and teamwork and (2) a presentation. In addition, there is an optional bonus task on analysis of feedback loops, fairness, and adversaries.
+
+First, reflect on the entire group project and discuss which decisions were hard and why, which decisions you would change in retrospect, and what you would do differently if you were building this for an actual company (probably with more time but also with higher stakes). Also reflect on your experience of working as a team (remotely or in-person).
+
+Second, create a 15-20 min presentation to the class presenting the project and your experiences. The presentation should cover some key design decisions and some results (e.g., quality measures or availability) and reflection, but generally you are free to chose how you focus your presentation. Note that all teams worked on the same project, so you can assume familiarity with the task.
+
+Third, consider feedback loops due to recommendations (positive or negative), fairness, and the potential for attacking the recommendation system (e.g., poisoning and evasion attacks). Think about what responsibility you might have as company and as authors of the recommendation system. Plan how you would detect a feedback loop and what you can do to avoid negative consequences once detected. Analyze the system logs or models for traces of either feedback loops, fairness issues, or attacks.
+
+**Technical details:** Good reflections are grounded in concrete experience and the specifics of the project. They avoid mere superficial statements and truisms. We are looking for honest reflections that are open about potential issues; *we grade only the quality of the reflection, not the quality of the technical decisions or teamwork described in the reflection*.
+
+For the presentation, we recommend that you prepare slides and practice timing. All team members should have an active part in the presentation. You may prerecord the presentation and play the recording for the final presentation if you prefer.
+
+For analyzing feedback loops, fairness, and attacks, better solutions will follow a more systematic process than just brainstorming: It is useful to go back to requirements and analyze assumptions and perform some risk analysis. We suggest you analyze past recommendations and user behavior, for example, changes in user behavior over time, recommendation quality differences for different populations, drift in recommendation requests or user behavior. We have no requirements for how to conduct this analysis but recommend to explore the data and share the results with a notebook.
+
+It is okay if you look for feedback loops or attacks that are not actually occurring or detect issues that we are not simulating. 
+
+**Deliverables:** Present your work in the dedicated session and submit a final report that describes the following:
+
+* **Conceptual Analysis of Potential Problems** (3 pages max): Describe the process you used to analyze possible feedback loops, fairness, and attacks. Identify at least 2 potential issues each. For each feedback loop, explain what might happen and what the positive or negative consequences are, and how it could be detected. For each fairness issue, describe the potential problem, the used notion of fairness, how it could be detected, and how it can be reduced. For each potential attack, describe the attack scenario, how it could be detected, how it could be mitigated or made harder to exploit, and what could be done once detected.
+* **Analysis of Problems in Log Data** (2 pages max): Briefly describe how you analyzed one potential issue (either feedback loop, fairness, or attack) in the telemetry data of your system. Summarize your key findings, including negative results. Provide pointers to the artifacts behind your analysis for details (ideally links to notebook files on Github).
+* **Reflection on Recommendation Service** (1 page max): Looking back at the entire project in which you have designed, implemented, deployed, and monitored the recommendation service. What parts were the most challenging? Which aspects are still unstable and would require additional investment if you had to deploy the recommendation service at scale in production? How would you address these issues if you had more time and more resources?
+* **Reflection on teamwork** (1 page max): Think back on your team's teamwork throughout this project. What went well or less well in the team assignments? What were some of the main challenges you faced in teamwork?  What could have been done better in your future collaboration in other teams? 
+
+**Grading:** The presentation is worth 20 points, the final report 30 points, 30 for the conceptual problem analysis and discussion of detection and mitigation strategies, 20 for analyzing the problems with telemetry data.
