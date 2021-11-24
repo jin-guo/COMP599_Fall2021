@@ -139,14 +139,14 @@ If you hit resource limits of your virtual machine, contact the course staff.
 * Online evaluation (1 page max): Briefly describe the metric used for evaluating model quality in production, the telemetry data collected, and the operationalization of the metric. Include or link to evaluation results in your report. Provide a pointer to the corresponding implementation in your code (preferably a direct GitHub link).
 * Canary releases (1 pages max): Briefly describe how you automate deployments and perform canary releases. Describe how you trigger releases and how the canary release process is implemented (e.g., load balancer, metrics, when to abort). If statistics are used to make decisions in the process explain and justify their use. Include evidence of at least one successful release and one aborted release. Provide pointers to your implementation/infrastructure and log files produced.
 * Provenance (2 pages max): Describe how you version and track provenance of models. Explain how you can, for any past recommendation, identify the model version, the used pipeline version, and the used training data. Give a concrete example with one past recommendation. Provide sufficient pointers such that the course staff could also identify the corresponding information for a given recommendation.
-* Team contributions (2 pages max): Briefly describe how your team organized itself. How did you divide the work? What responsibilities did each person have, and what contributions did each person make? Provide pointers to notes taken at team meetings, as well as evidence of significant contributions, such as via commits on Github.
+* Individual contributions to the Team (2 pages max): Briefly describe how your team organized itself. How did you divide the work? What responsibilities did each person have, and what contributions did each person make? Provide pointers to notes taken at team meetings, as well as evidence of significant contributions, such as via commits on Github.
 
 **Grading:**
 Grading is divided into two parts:
 
 1. Milestone Score (max 100 points): 5 for containerization, 30 for monitoring availability and model quality (15 for service avaialablity and 15 for model quality), 40 for automated canary releases (including 10 for automatic model builds, 15 for incremental rollouts with automated decisions, 5 for automated notifications of successful and failed releases, 5 for evidence a successful and a correctly aborted release, and 5 for automatic regular releases), 25 points for provenance tracking.
 
-2. Contribution Score (integer score between 6-10 based on the Team Contributions and grader's observations of existing evidence):
+2. Contribution Score (integer score between 6-10 based on the Individual Contributions to the Team and grader's observations of existing evidence):
     - 6: Token contributions only
     - 7: Some participation, though limited in initiative and ideas
     - 8: Few active contributions
@@ -182,15 +182,15 @@ For the presentation, we recommend that you prepare slides and practice timing. 
 * **Conceptual Analysis of Potential Problems** (3 pages max): Describe the process you used to analyze possible feedback loops, fairness, and attacks. Identify at least 2 potential issues each. For each feedback loop, explain what might happen and what the positive or negative consequences are, and how it could be detected. For each fairness issue, describe the potential problem, the used notion of fairness, how it could be detected, and how it can be reduced. For each potential attack, describe the attack scenario, how it could be detected, how it could be mitigated or made harder to exploit, and what could be done once detected.
 * **Analysis of Problems in Log Data** (2 pages max): Briefly describe how you analyzed one potential issue (either feedback loop, fairness, or attack) in the telemetry data of your system. Summarize your key findings, including negative results. Provide pointers to the artifacts behind your analysis for details (ideally links to files on Github).
 * **Reflection on Recommendation Service** (1 page max): Looking back at the entire project in which you have designed, implemented, deployed, and monitored the recommendation service. What parts were the most challenging? Which aspects are still unstable and would require additional investment if you had to deploy the recommendation service at scale in production? How would you address these issues if you had more time and more resources?
-* **Reflection on teamwork** (1 page max): Think back on your team's teamwork throughout this project. What went well or less well in the team assignments? What were some of the main challenges you faced in teamwork?  What could have been done better in your future collaboration in other teams? 
-* **Team contributions and meeting notes** (2 pages max): Briefly describe how do you divided the work? What responsibilities did each person have, and what contributions did each person make? Provide evidence of significant contributions, such as via commits on Github. Provide pointers to notes taken at team meetings; the notes should contain who contributed to the discussions, the flow of the discussions, how ideas were generated, the responsibilities that each team member handled, etc.
+* **Reflection on Teamwork** (1 page max): Think back on your team's teamwork throughout this project. What went well or less well in the team assignments? What were some of the main challenges you faced in teamwork?  What could have been done better in your future collaboration in other teams? 
+* **Individual Contributions and Meeting Notes** (2 pages max): Briefly describe how do you divided the work? What responsibilities did each person have, and what contributions did each person make? Provide evidence of significant contributions, such as via commits on Github. Provide pointers to notes taken at team meetings; the notes should contain who contributed to the discussions, the flow of the discussions, how ideas were generated, the responsibilities that each team member handled, etc.
 
 **Grading:**
 Grading is divided into two parts:
 
 1. The presentation is worth 20 points, the final report 30 points, 30 for the conceptual problem analysis and discussion of detection and mitigation strategies, 20 for analyzing the problems with telemetry data.
 
-2. Contribution Score (integer score between 6-10 based on the Team Contributions and grader's observations of existing evidence):
+2. Contribution Score (integer score between 6-10 based on the Individual Contributions and grader's observations of existing evidence):
     - 6: Token contributions only
     - 7: Some participation, though limited in initiative and ideas
     - 8: Few active contributions
