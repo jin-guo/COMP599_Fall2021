@@ -124,7 +124,7 @@ Keep your recommendation service running as much as possible for the remainder o
 
 We recommend to mostly use existing infrastructure for monitoring, such as `Grafana`. You may also use external cloud services if you prefer. Monitor at least availability of your service (e.g., by analyzing the Kafka logs) and the model quality through online evaluation metrics.
 
-For canary releases, you can write your own infrastructure or use an external library or service (e.g., LaunchDarkly or split.io). Releases may be triggered by code changes from your continuous integration service, manually from the command line, or periodically from a scheduler (e.g., `cron`). You could use your own simple load balancer to route traffic to different model servers depending on which users should see which model. You can use your existing telemetry data to make decisions about continuing or aborting the release (5 bonus points for using appropriate statistics for making this decision). Automatically send emails for successful or aborted releases.
+For canary releases, you can write your own infrastructure or use an external library or service (e.g., LaunchDarkly or split.io). Releases may be triggered by code changes from your continuous integration service, manually from the command line, or periodically from a scheduler (e.g., `cron`). You could use your own simple load balancer to route traffic to different model servers depending on which users should see which model. You can use your existing telemetry data to make decisions about continuing or aborting the release. Automatically send emails for successful or aborted releases.
 
 Regarding provenance, you have full flexibility. You may use a tool like [`dvc`](https://dvc.org/) or write your own mechanisms. The key point is to being able to track all inputs used for a prediction when needed, e.g., for debugging. Consider tradeoffs among different qualities, such as the amount of data stored and the effort in retrieving it.
 
@@ -139,11 +139,21 @@ If you hit resource limits of your virtual machine, contact the course staff.
 * Online evaluation (1 page max): Briefly describe the metric used for evaluating model quality in production, the telemetry data collected, and the operationalization of the metric. Include or link to evaluation results in your report. Provide a pointer to the corresponding implementation in your code (preferably a direct GitHub link).
 * Canary releases (1 pages max): Briefly describe how you automate deployments and perform canary releases. Describe how you trigger releases and how the canary release process is implemented (e.g., load balancer, metrics, when to abort). If statistics are used to make decisions in the process explain and justify their use. Include evidence of at least one successful release and one aborted release. Provide pointers to your implementation/infrastructure and log files produced.
 * Provenance (2 pages max): Describe how you version and track provenance of models. Explain how you can, for any past recommendation, identify the model version, the used pipeline version, and the used training data. Give a concrete example with one past recommendation. Provide sufficient pointers such that the course staff could also identify the corresponding information for a given recommendation.
-* Team process and meeting notes (1 page max): Briefly describe how your team organized itself. How did you divide the work? What responsibilities did each person have, and what contributions did each person make? Provide pointers to notes taken at team meetings.
+* Team contributions (2 pages max): Briefly describe how your team organized itself. How did you divide the work? What responsibilities did each person have, and what contributions did each person make? Provide pointers to notes taken at team meetings, as well as evidence of significant contributions, such as via commits on Github.
 
-**Grading:** This milestone is worth 100 points: 5 for containerization, 30 for monitoring availability and model quality (15 for service avaialablity and 15 for model quality), 40 for automated canary releases (including 10 for automatic model builds, 15 for incremental rollouts with automated decisions, 5 for automated notifications of successful and failed releases, 5 for evidence a successful and a correctly aborted release, and 5 for automatic regular releases), 25 points for provenance tracking.
+**Grading:**
+Grading is divided into two parts:
 
+1. Milestone Score (max 100 points): 5 for containerization, 30 for monitoring availability and model quality (15 for service avaialablity and 15 for model quality), 40 for automated canary releases (including 10 for automatic model builds, 15 for incremental rollouts with automated decisions, 5 for automated notifications of successful and failed releases, 5 for evidence a successful and a correctly aborted release, and 5 for automatic regular releases), 25 points for provenance tracking.
 
+2. Contribution Score (integer score between 6-10 based on the Team Contributions and grader's observations of existing evidence):
+    - 6: Token contributions only
+    - 7: Some participation, though limited in initiative and ideas
+    - 8: Few active contributions
+    - 9: Regular active contributions
+    - 10: Regular, active contributions, with participation (even in terms of discussion) in most aspects of the project
+
+Each team member will receive a final grade for this Milestone 3 calculated as: `(contribution/10)*milestone`
 
 ## Final Report and Presentation
 
@@ -153,27 +163,39 @@ If you hit resource limits of your virtual machine, contact the course staff.
 * Design and implement a monitoring strategy to detect feedback loops and attacks
 * Reflect on the quality and operation of an AI-enabled system
 
-**Tasks:** Up to this point, the project focused on implementing and testing functionality, but you also now have multiple weeks of making recommendations and observing their effects. This final part has two steps: (1) reflection on the infrastructure and teamwork and (2) a presentation. In addition, there is an optional bonus task on analysis of feedback loops, fairness, and adversaries.
+**Tasks:** Up to this point, the project focused on implementing and testing functionality, but you also now have multiple weeks of making recommendations and observing their effects. This final part has three steps: (1) reflection on the infrastructure and teamwork, (2) analyzing feedback loops, fairness, and potential attack points, and (3) a presentation.
 
 First, reflect on the entire group project and discuss which decisions were hard and why, which decisions you would change in retrospect, and what you would do differently if you were building this for an actual company (probably with more time but also with higher stakes). Also reflect on your experience of working as a team (remotely or in-person).
 
-Second, create a 15-20 min presentation to the class presenting the project and your experiences. The presentation should cover some key design decisions and some results (e.g., quality measures or availability) and reflection, but generally you are free to chose how you focus your presentation. Note that all teams worked on the same project, so you can assume familiarity with the task.
+Second, consider feedback loops due to recommendations (positive or negative), fairness, and the potential for attacking the recommendation system (e.g., poisoning and evasion attacks). Think about what responsibility you might have as company and as authors of the recommendation system. Plan how you would detect a feedback loop and what you can do to avoid negative consequences once detected. Analyze the system logs or models for traces of either feedback loops, fairness issues, or attacks.
 
-Third, consider feedback loops due to recommendations (positive or negative), fairness, and the potential for attacking the recommendation system (e.g., poisoning and evasion attacks). Think about what responsibility you might have as company and as authors of the recommendation system. Plan how you would detect a feedback loop and what you can do to avoid negative consequences once detected. Analyze the system logs or models for traces of either feedback loops, fairness issues, or attacks.
+Third, create a 15-20 min presentation to the class presenting the project and your experiences. The presentation should cover some key design decisions and some results (e.g., quality measures or availability) and reflection, but generally you are free to chose how you focus your presentation. Note that all teams worked on the same project, so you can assume familiarity with the task.
 
-**Technical details:** Good reflections are grounded in concrete experience and the specifics of the project. They avoid mere superficial statements and truisms. We are looking for honest reflections that are open about potential issues; *we grade only the quality of the reflection, not the quality of the technical decisions or teamwork described in the reflection*.
+**Technical details:** Good reflections are grounded in concrete experience and the specifics of the project. They avoid mere superficial statements and truisms. We are looking for honest reflections that are open about potential issues.
+
+For analyzing feedback loops, fairness, and attacks, better solutions will follow a more systematic process than just brainstorming: It is useful to go back to requirements and analyze assumptions and perform some risk analysis. We suggest you analyze past recommendations and user behavior, for example, changes in user behavior over time, recommendation quality differences for different populations, drift in recommendation requests or user behavior. We have no requirements for how to conduct this analysis but recommend to explore the data and share the results. We encourage you to look for feedback loops or attacks that are not actually occurring or detect issues that we are not simulating.
 
 For the presentation, we recommend that you prepare slides and practice timing. All team members should have an active part in the presentation. You may prerecord the presentation and play the recording for the final presentation if you prefer.
 
-For analyzing feedback loops, fairness, and attacks, better solutions will follow a more systematic process than just brainstorming: It is useful to go back to requirements and analyze assumptions and perform some risk analysis. We suggest you analyze past recommendations and user behavior, for example, changes in user behavior over time, recommendation quality differences for different populations, drift in recommendation requests or user behavior. We have no requirements for how to conduct this analysis but recommend to explore the data and share the results with a notebook.
-
-It is okay if you look for feedback loops or attacks that are not actually occurring or detect issues that we are not simulating. 
-
-**Deliverables:** Present your work in the dedicated session and submit a final report that describes the following:
+**Deliverables:** Present your work in the dedicated session and submit a final report (by email to Jin and Deeksha) that describes the following:
 
 * **Conceptual Analysis of Potential Problems** (3 pages max): Describe the process you used to analyze possible feedback loops, fairness, and attacks. Identify at least 2 potential issues each. For each feedback loop, explain what might happen and what the positive or negative consequences are, and how it could be detected. For each fairness issue, describe the potential problem, the used notion of fairness, how it could be detected, and how it can be reduced. For each potential attack, describe the attack scenario, how it could be detected, how it could be mitigated or made harder to exploit, and what could be done once detected.
-* **Analysis of Problems in Log Data** (2 pages max): Briefly describe how you analyzed one potential issue (either feedback loop, fairness, or attack) in the telemetry data of your system. Summarize your key findings, including negative results. Provide pointers to the artifacts behind your analysis for details (ideally links to notebook files on Github).
+* **Analysis of Problems in Log Data** (2 pages max): Briefly describe how you analyzed one potential issue (either feedback loop, fairness, or attack) in the telemetry data of your system. Summarize your key findings, including negative results. Provide pointers to the artifacts behind your analysis for details (ideally links to files on Github).
 * **Reflection on Recommendation Service** (1 page max): Looking back at the entire project in which you have designed, implemented, deployed, and monitored the recommendation service. What parts were the most challenging? Which aspects are still unstable and would require additional investment if you had to deploy the recommendation service at scale in production? How would you address these issues if you had more time and more resources?
 * **Reflection on teamwork** (1 page max): Think back on your team's teamwork throughout this project. What went well or less well in the team assignments? What were some of the main challenges you faced in teamwork?  What could have been done better in your future collaboration in other teams? 
+* **Team contributions and meeting notes** (2 pages max): Briefly describe how do you divided the work? What responsibilities did each person have, and what contributions did each person make? Provide evidence of significant contributions, such as via commits on Github. Provide pointers to notes taken at team meetings; the notes should contain who contributed to the discussions, the flow of the discussions, how ideas were generated, the responsibilities that each team member handled, etc.
 
-**Grading:** The presentation is worth 20 points, the final report 30 points, 30 for the conceptual problem analysis and discussion of detection and mitigation strategies, 20 for analyzing the problems with telemetry data.
+**Grading:**
+Grading is divided into two parts:
+
+1. The presentation is worth 20 points, the final report 30 points, 30 for the conceptual problem analysis and discussion of detection and mitigation strategies, 20 for analyzing the problems with telemetry data.
+
+2. Contribution Score (integer score between 6-10 based on the Team Contributions and grader's observations of existing evidence):
+    - 6: Token contributions only
+    - 7: Some participation, though limited in initiative and ideas
+    - 8: Few active contributions
+    - 9: Regular active contributions
+    - 10: Regular, active contributions, with participation (even in terms of discussion) in most aspects of the project
+
+Each team member will receive a final grade for this Final Report and Presentation calculated as: `(contribution/10)*milestone`
+
