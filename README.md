@@ -71,7 +71,7 @@ We will not concentrate on any particular resources. Instead, the readings will 
 |23	|  23 Nov  | [Transparent and Explainability](Slides/23-TransparencyExplainability.pdf) |[Explainable machine learning in deployment](https://dl.acm.org/doi/abs/10.1145/3351095.3375624) <br>[Designing Theory-Driven User-Centric Explainable AI](https://dl.acm.org/doi/pdf/10.1145/3290605.3300831?casa_token=TvYM-Ik6lakAAAAA:bLF4QklCqOopi6TBhZekzVhfmV2o226OcvSGSYQ5VYwh7mD1gRBkxMDbZ7no1oQRnNMw0uMJoUGX) |  | [Souleima](Slides/Souleima_Accountability.pdf)<br>[Oumar](Slides/Oumar_Explainability_Interpretability.pdf)|
 |24	|  25 Nov  | Fairness | [Improving Fairness in Machine Learning Systems: What Do Industry Practitioners Need?](https://dl.acm.org/doi/10.1145/3290605.3300830)<br>[Co-Designing Checklists to Understand Organizational Challenges and Opportunities around Fairness in AI](http://www.jennwv.com/papers/checklists.pdf)|  |[Kevin](Slides/Kevin_Bias.pdf) |
 |25	|  30 Nov  | Value in AI Design | [“The Human Body is a Black Box”: Supporting Clinical Decision-Making with Deep Learning](https://dl.acm.org/doi/pdf/10.1145/3351095.3372827) |  |  |
-|26	|  2 Dec  | Presentation | |  |  |
+|26	|  10 Dec (Zoom)  | Presentation | |  |  |
  
 
 # Credit:
